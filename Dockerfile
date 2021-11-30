@@ -1,6 +1,6 @@
 FROM node:alpine
 
-ARG PORT=5000
+ARG PORT=3000
 ARG REPO=https://github.com/Xanonymous-GitHub/xcc-tw-web.git
 
 WORKDIR /homepage
@@ -14,5 +14,4 @@ RUN apk update \
     && rm -rf node_modules
 
 EXPOSE $PORT
-ENV PORT=$PORT
 CMD ["node", ".output/server/index.mjs"]
