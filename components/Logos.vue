@@ -1,14 +1,14 @@
 <script lang="ts" setup>
-import gem from '~/assets/images/gem.png'
+import parrot from '~/assets/images/parrot.png'
 </script>
 
 <template>
   <div cursor-default font-300 inline-flex text-2xl>
     <div children:mx-auto flex flex-col>
       <img
-        :src="gem"
+        :src="parrot"
         alt=""
-        class="animate-pulse"
+        class="animate-ping animate-bounce motion-safe:animate-spin"
         h-18
         inline-block
         w-18
