@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import gem from '~/assets/images/gem.png'
+</script>
+
 <template>
   <div cursor-default font-300 inline-flex text-2xl>
     <div children:mx-auto flex flex-col>
@@ -13,10 +17,6 @@
     </div>
   </div>
 </template>
-
-<script lang="ts" setup>
-import gem from '~/assets/images/gem.png'
-</script>
 
 <style lang="scss" scoped>
 .fugaz-one {
