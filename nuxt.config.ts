@@ -1,14 +1,18 @@
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
   meta: {
     title: 'Xanonymous Core Cells',
   },
   buildModules: [
-    '@vueuse/core/nuxt',
+    '@vueuse/nuxt',
     '@unocss/nuxt',
     '@pinia/nuxt',
   ],
+  experimental: {
+    reactivityTransform: true,
+    viteNode: false,
+  },
   unocss: {
     uno: true,
     attributify: true,
@@ -20,22 +24,7 @@ export default defineNuxtConfig({
   vite: {
     logLevel: 'info',
     build: {
-      minify: 'terser',
-      brotliSize: true,
       cssCodeSplit: true,
-      terserOptions: {
-        sourceMap: false,
-        ecma: 5,
-        ie8: true,
-        safari10: true,
-        keep_classnames: false,
-        keep_fnames: false,
-        compress: true,
-        format: {
-          preserve_annotations: false,
-          comments: false,
-        },
-      },
       chunkSizeWarningLimit: 100000,
     },
   },
