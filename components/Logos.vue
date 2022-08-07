@@ -13,7 +13,7 @@ import gem from '~/assets/images/gem.png'
         inline-block
         w-18
       >
-      <span font-500 mt-6 class="fugaz-one">Xanonymous Core Cells - XCC</span>
+      <span font-500 mt-6 class="fugaz-one">Xanonymous Core Cells - XCC.TW</span>
     </div>
   </div>
 </template>
