@@ -1,14 +1,13 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxi build",
+    "build": "nuxi generate",
     "dev": "nuxi dev",
     "start": "node .output/server/index.mjs",
-    "lint": "eslint .",
+    "lint": "eslint . --fix",
     "postinstall": "nuxi prepare"
   },
   "devDependencies": {
-    "pinia": "^2.0.17",
     "@antfu/eslint-config": "^0.25.2",
     "@iconify-json/carbon": "^1.1.7",
     "@iconify-json/twemoji": "^1.1.5",
@@ -17,6 +16,7 @@
     "@vueuse/nuxt": "^9.1.0",
     "eslint": "^8.21.0",
     "nuxt": "^3.0.0-rc.6",
+    "pinia": "^2.0.17",
     "sass": "^1.54.3",
     "typescript": "^4.7.4"
   }

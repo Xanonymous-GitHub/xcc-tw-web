@@ -9,6 +9,14 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@pinia/nuxt',
   ],
+  nitro: {
+    minify: true,
+    sourceMap: false,
+    node: false,
+    prerender: {
+      routes: ['/'],
+    },
+  },
   experimental: {
     reactivityTransform: true,
     viteNode: false,
