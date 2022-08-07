@@ -8,12 +8,23 @@ import parrot from '~/assets/images/parrot.png'
       <img
         :src="parrot"
         alt=""
-        class="animate-ping animate-bounce motion-safe:animate-spin"
+        class="animate-bounce"
         h-18
         inline-block
         w-18
       >
-      <span font-500 mt-6 class="fugaz-one">Xanonymous Core Cells - XCC.TW</span>
+      <h1 font-500 mt-6 class="fugaz-one">
+        Xanonymous Core Cells ❄︎ XCC.TW
+      </h1>
+      <h6 text-start font-100 text-lg mt-6 class="fugaz-one">
+        Hi, I'm <b text-violet-500>Xanonymous</b>, you can also call me <b text-violet-500>TU</b>, and welcome to my personal website!
+      </h6>
+      <h6 text-start font-100 text-lg mt-6 class="fugaz-one">
+        For some reason, this site is not ready yet! But I will finish it in the near future 😜!
+      </h6>
+      <h6 text-start font-100 text-lg mt-6 class="fugaz-one">
+        So, for more about me, please visit my GitHub directly by clicking the button below!
+      </h6>
     </div>
   </div>
 </template>
