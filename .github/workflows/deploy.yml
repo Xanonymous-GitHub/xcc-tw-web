@@ -1,0 +1,40 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    name: Publish to Pages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.pnpm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+            
+      - run: npm i -g pnpm && SHELL="/bin/bash" pnpm setup && pnpm i --frozen-lockfile --shamefully-hoist && pnpm build
+
+      - name: Publish to Pages
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.ACCOUNT_NAME }}
+          projectName: ${{ secrets.PROJECT_NAME }}
+          directory: .output/public
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
