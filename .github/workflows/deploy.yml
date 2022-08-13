@@ -32,4 +32,5 @@ jobs:
         with:
           github_token: ${{ secrets.ACCESS_TOKEN }}
           publish_dir: ./dist
+          force_orphan: true
           cname: xcc.tw
