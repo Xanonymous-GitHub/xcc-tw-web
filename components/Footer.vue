@@ -12,6 +12,5 @@
       rel="nofollow noreferrer noopener"
       target="__blank"
     />
-    <DarkToggle />
   </div>
 </template>

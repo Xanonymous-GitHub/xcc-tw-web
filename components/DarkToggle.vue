@@ -1,6 +1,5 @@
 <script setup lang='ts'>
-const isDark = useDark()
-const toggleDark = useToggle(isDark)
+import { isDark, toggleDark } from '~/composables'
 </script>
 
 <template>

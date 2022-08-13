@@ -5,6 +5,5 @@ import '~/styles/main.scss'
 <template>
   <main class="py-20 px-10">
     <NuxtPage />
-    <Footer />
   </main>
 </template>

@@ -79,5 +79,6 @@ const links: Array<Readonly<Link>> = [
         <SiteButton v-for="(link, i) in links" :key="i" :text="link.text" :link="link.url" />
       </span>
     </div>
+    <Footer />
   </div>
 </template>
