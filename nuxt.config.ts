@@ -1,39 +1,29 @@
 import { defineNuxtConfig } from 'nuxt'
 
 export default defineNuxtConfig({
-  meta: {
-    title: 'Xanonymous Core Cells',
-  },
-  buildModules: [
+  modules: [
     '@vueuse/nuxt',
     '@unocss/nuxt',
-    '@pinia/nuxt',
+    '@nuxtjs/color-mode',
   ],
-  nitro: {
-    minify: true,
-    sourceMap: false,
-    node: false,
-    prerender: {
-      routes: ['/'],
-    },
-  },
   experimental: {
     reactivityTransform: true,
     viteNode: false,
   },
   unocss: {
-    uno: true,
-    attributify: true,
     preflight: true,
-    icons: {
-      scale: 1.2,
-    },
   },
-  vite: {
-    logLevel: 'info',
-    build: {
-      cssCodeSplit: true,
-      chunkSizeWarningLimit: 100000,
+  colorMode: {
+    classSuffix: '',
+  },
+  // https://github.com/nuxt/framework/issues/6204#issuecomment-1201398080
+  hooks: {
+    'vite:extendConfig': function (config: any, { isServer }: any) {
+      if (isServer) {
+        // Workaround for netlify issue
+        // https://github.com/nuxt/framework/issues/6204
+        config.build.rollupOptions.output.inlineDynamicImports = true
+      }
     },
   },
 })
