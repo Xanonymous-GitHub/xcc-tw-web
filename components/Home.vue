@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import parrot from '~/assets/images/parrot.png'
-import SiteButton from '~/components/SiteButton.vue'
 
 interface Link {
   text: string
@@ -31,6 +30,10 @@ const links: Array<Readonly<Link>> = [
   {
     text: 'Notes',
     url: new URL('https://hackmd.xcc.tw'),
+  },
+  {
+    text: 'Hey PTT',
+    url: new URL('https://ptt.xcc.tw'),
   },
 ]
 </script>
