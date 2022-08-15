@@ -4,6 +4,9 @@
     gap-3
     justify-center
     m-5
+    max-h-6
+    h-6
+    overflow-hidden
     text="xl gray4"
   >
     <a
@@ -12,5 +15,6 @@
       rel="nofollow noreferrer noopener"
       target="__blank"
     />
+    <XLogo />
   </div>
 </template>
