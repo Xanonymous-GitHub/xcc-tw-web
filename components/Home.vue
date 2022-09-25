@@ -39,7 +39,7 @@ const links: Array<Readonly<Link>> = [
 </script>
 
 <template>
-  <div cursor-default font-300 text-2xl>
+  <div cursor-default font-300 text-2xl m-auto>
     <div children:mx-auto flex flex-col>
       <img
         :src="parrot"
