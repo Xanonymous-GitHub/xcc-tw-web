@@ -9,15 +9,15 @@
     "postinstall": "nuxi prepare"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.26.1",
-    "@iconify-json/carbon": "^1.1.7",
+    "@antfu/eslint-config": "^0.27.0",
+    "@iconify-json/carbon": "^1.1.8",
     "@iconify-json/twemoji": "^1.1.5",
-    "@nuxtjs/color-mode": "^3.1.4",
-    "@unocss/nuxt": "^0.45.7",
-    "@vueuse/nuxt": "^9.1.0",
-    "eslint": "^8.22.0",
-    "nuxt": "^3.0.0-rc.8",
-    "sass": "^1.54.4",
-    "typescript": "^4.7.4"
+    "@nuxtjs/color-mode": "^3.1.6",
+    "@unocss/nuxt": "^0.45.22",
+    "@vueuse/nuxt": "^9.2.0",
+    "eslint": "^8.24.0",
+    "nuxt": "^3.0.0-rc.11",
+    "sass": "^1.55.0",
+    "typescript": "^4.8.3"
   }
 }
