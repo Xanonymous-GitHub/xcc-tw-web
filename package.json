@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@7.5.0",
+  "packageManager": "pnpm@7.12.0",
   "scripts": {
     "build": "nuxi generate",
     "dev": "nuxi dev",
