@@ -64,16 +64,16 @@ const links: Array<Readonly<Link>> = [
       </h6>
 
       <span flex flex-row flex-no-wrap space-between my-4>
-        <a href="https://s.xcc.tw/s/iMC13wjsFLh" mx-1>
+        <a href="https://www.linkedin.com/in/xanonymous" mx-1>
           <img rounded-xl shadow-sm src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="">
         </a>
         <a href="mailto:contact@xcc.tw" mx-1>
           <img rounded-xl shadow-sm src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="">
         </a>
-        <a href="https://s.xcc.tw/s/vBX1FPbCy3m" mx-1>
+        <a href="https://youtube.com/anonymousX_TM" mx-1>
           <img rounded-xl shadow-sm src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="">
         </a>
-        <a href="https://s.xcc.tw/s/qgoHH358f8q" mx-1>
+        <a href="https://twitter.com/Xanonymous_Tw" mx-1>
           <img rounded-xl shadow-sm src="https://img.shields.io/badge/Twitter-1da1f2?style=for-the-badge&logo=twitter&logoColor=white" alt="">
         </a>
       </span>
