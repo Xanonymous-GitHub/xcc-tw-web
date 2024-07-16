@@ -16,5 +16,6 @@
       target="__blank"
     />
     <XLogo />
+    {{ new Date().getFullYear() }}
   </div>
 </template>
