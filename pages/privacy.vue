@@ -1,4 +1,13 @@
 <script setup lang="ts">
+useHead({
+  title: 'Privacy Policy',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+  charset: 'utf-8',
+  link: [
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+  ],
+})
+
 const today = new Date()
 const yyyy = today.getFullYear()
 const mm = String(today.getMonth() + 1).padStart(2, '0')
