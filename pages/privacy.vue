@@ -18,9 +18,9 @@ const contactEmail = 'contact@xcc.tw'
 </script>
 
 <template>
-  <div cursor-default font-300 m-auto max-w-70vw>
+  <div cursor-default font-300 m-auto max-w-7xl>
     <h1 text-center text-4xl>
-      隱私權政策｜Privacy Policy
+      隱私權政策 Privacy Policy
     </h1>
     <br>
     <header>
