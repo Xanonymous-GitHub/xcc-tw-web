@@ -1,23 +1,26 @@
 {
   "private": true,
   "scripts": {
-    "build": "nuxi generate",
-    "dev": "nuxi dev",
+    "build": "nuxt generate",
+    "dev": "nuxt dev",
     "start": "node .output/server/index.mjs",
     "lint": "eslint . --fix",
-    "postinstall": "nuxi prepare"
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^4.1.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.22.4",
-    "@iconify-json/carbon": "^1.1.36",
-    "@iconify-json/twemoji": "^1.1.15",
-    "@nuxtjs/color-mode": "^3.4.2",
-    "@unocss/nuxt": "^0.61.4",
-    "@vueuse/nuxt": "^10.11.0",
-    "eslint": "^9.7.0",
-    "eslint-plugin-format": "^0.1.2",
-    "nuxt": "^3.12.3",
-    "sass": "^1.77.8",
-    "typescript": "^5.5.3"
+    "@antfu/eslint-config": "^6.2.0",
+    "@iconify-json/carbon": "^1.2.14",
+    "@iconify-json/twemoji": "^1.2.4",
+    "@nuxtjs/color-mode": "^3.5.2",
+    "@unocss/nuxt": "^66.5.4",
+    "@vueuse/nuxt": "^14.0.0",
+    "eslint": "^9.39.0",
+    "eslint-plugin-format": "^1.0.2",
+    "nuxt": "^4.2.0",
+    "sass": "^1.93.3",
+    "typescript": "^5.9.3"
   }
 }
