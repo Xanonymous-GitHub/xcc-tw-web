@@ -98,9 +98,6 @@ const contactEmail = 'contact@xcc.tw'
         <p>
           任何隱私相關問題，請聯絡：<strong><a :href="`mailto:${contactEmail}`">{{ contactEmail }}</a></strong><br>
         </p>
-        <p class="note">
-          <strong>展示與連結要求：</strong>本政策應公開於與應用首頁<strong>同一網域</strong>，並在 OAuth 同意畫面提供連結；所有使用之網域需在 Google Cloud 專案中完成授權網域驗證。
-        </p>
       </section>
     </article>
     <br>
@@ -171,9 +168,6 @@ const contactEmail = 'contact@xcc.tw'
         <h2>10. Contact Us</h2>
         <p>
           For privacy inquiries, contact: <strong><a :href="`mailto:${contactEmail}`">{{ contactEmail }}</a></strong><br>
-        </p>
-        <p class="note">
-          <strong>Display & Linking:</strong> Host this Policy on the <strong>same domain</strong> as your app’s homepage and link it on the OAuth consent screen; ensure all domains in use are verified in your Google Cloud project’s Authorized domains.
         </p>
       </section>
     </article>
