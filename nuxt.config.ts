@@ -19,4 +19,12 @@ export default defineNuxtConfig({
   },
 
   sourcemap: false,
+
+  vite: {
+    esbuild: {
+      logOverride: {
+        'css-syntax-error': 'silent',
+      },
+    },
+  },
 })
