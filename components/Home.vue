@@ -47,9 +47,13 @@ const links: Array<Readonly<Link>> = [
         So, for more about me, please visit my GitHub directly by clicking the button below!
       </h6>
 
+      <h6 text-start font-100 text-lg mt-6 class="fugaz-one">
+        You can view my privacy policy at: <a href="/privacy" text-blue-500 underline>Privacy Policy</a>
+      </h6>
+
       <span flex flex-row flex-no-wrap space-between my-4>
         <a href="https://www.linkedin.com/in/xanonymous" mx-1>
-          <img rounded-xl shadow-sm src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="">
+          <img rounded-xl shadow-sm src="https://img.shields.io/badge/Linkedin-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="">
         </a>
         <a href="mailto:contact@xcc.tw" mx-1>
           <img rounded-xl shadow-sm src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="">
