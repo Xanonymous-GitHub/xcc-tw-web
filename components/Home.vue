@@ -9,19 +9,11 @@ interface Link {
 const links: Array<Readonly<Link>> = [
   {
     text: 'BaBaIsYou',
-    url: new URL('https://baba.ntut.club'),
-  },
-  {
-    text: 'Hey PTT',
-    url: new URL('https://ptt.xcc.tw'),
+    url: new URL('https://baba.xcc.tw'),
   },
   {
     text: 'E-VEG shop',
     url: new URL('https://eveg.xcc.tw'),
-  },
-  {
-    text: 'Sherlock',
-    url: new URL('https://sherlock.xcc.tw'),
   },
   {
     text: 'TAT',

@@ -1,6 +1,8 @@
-@import "fonts.scss";
+@use "tailwindcss";
+@use "@nuxt/ui";
+@use "fonts.scss";
 
-@include _font;
+@include fonts.custom_font;
 
 html,
 body,
