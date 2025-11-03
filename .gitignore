@@ -8,6 +8,8 @@ dist
 .DS_Store
 
 /dist
+/.claude
+/.serena
 
 # local env files
 .env.local
