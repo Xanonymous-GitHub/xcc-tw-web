@@ -10,6 +10,12 @@ export default defineNuxtConfig({
 
   css: ['~/styles/main.scss'],
 
+  nitro: {
+    prerender: {
+      routes: ['/privacy'],
+    },
+  },
+
   unocss: {
     preflight: true,
   },
