@@ -8,12 +8,8 @@ useHead({
   ],
 })
 
-const today = new Date()
-const yyyy = today.getFullYear()
-const mm = String(today.getMonth() + 1).padStart(2, '0')
-const dd = String(today.getDate()).padStart(2, '0')
+const { privacyPolicyBuildDay } = useAppConfig()
 
-const lastUpdated = `${yyyy}-${mm}-${dd}`
 const contactEmail = 'contact@xcc.tw'
 </script>
 
@@ -26,7 +22,7 @@ const contactEmail = 'contact@xcc.tw'
     <br>
     <header>
       <p text-center text-gray-500 class="meta">
-        最後更新日 Last Updated：<strong>{{ lastUpdated }}</strong>
+        最後更新日 Last Updated：<strong>{{ privacyPolicyBuildDay }}</strong>
       </p>
     </header>
     <br>
