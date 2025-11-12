@@ -34,7 +34,7 @@ const links: Array<Readonly<Link>> = [
         w-18
       >
       <h1 font-500 mt-6 class="fugaz-one" text-center>
-        <b whitespace-nowrap>Xanonymous</b> <b whitespace-nowrap>Core Cells</b> ❄︎ <b whitespace-nowrap>XCC.TW</b>
+        <b whitespace-nowrap>XCCTW</b>
       </h1>
       <h6 text-start font-100 text-lg mt-6 class="fugaz-one">
         Hi, I'm <b text-violet-500>Xanonymous</b>, you can also call me <b text-violet-500>T.U.</b>, and welcome to my
