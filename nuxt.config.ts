@@ -1,5 +1,13 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
+const buildDate = (() => {
+  const today = new Date()
+  const yyyy = today.getFullYear()
+  const mm = String(today.getMonth() + 1).padStart(2, '0')
+  const dd = String(today.getDate()).padStart(2, '0')
+  return `${yyyy}-${mm}-${dd}`
+})()
+
 export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
@@ -9,6 +17,12 @@ export default defineNuxtConfig({
   ],
 
   css: ['~/styles/main.scss'],
+
+  runtimeConfig: {
+    public: {
+      privacyPolicyBuildDay: buildDate,
+    },
+  },
 
   nitro: {
     prerender: {

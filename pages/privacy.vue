@@ -8,7 +8,8 @@ useHead({
   ],
 })
 
-const { privacyPolicyBuildDay } = useAppConfig()
+const config = useRuntimeConfig()
+const privacyPolicyBuildDay = config.public.privacyPolicyBuildDay
 
 const contactEmail = 'contact@xcc.tw'
 </script>
