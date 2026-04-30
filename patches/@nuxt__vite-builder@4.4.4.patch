@@ -1,0 +1,58 @@
+diff --git a/dist/index.mjs b/dist/index.mjs
+index 0e583f9358bdda73ea140c21d429292227274bf9..64814c70fc7ffd5644005c291c6f9854b4bfb385 100644
+--- a/dist/index.mjs
++++ b/dist/index.mjs
+@@ -105,7 +105,7 @@ function RuntimePathsPlugin() {
+ 				s.prepend("import \"#internal/nuxt/paths\";");
+ 				return {
+ 					code: s.toString(),
+-					map: sourcemap ? s.generateMap({ hires: true }) : void 0
++					map: sourcemap ? s.generateMap({ hires: true }) : null
+ 				};
+ 			}
+ 		}
+@@ -151,7 +151,7 @@ function TypeCheckPlugin(nuxt) {
+ 			s.prepend("import \"/@vite-plugin-checker-runtime-entry\";\n");
+ 			return {
+ 				code: s.toString(),
+-				map: sourcemap ? s.generateMap({ hires: true }) : void 0
++				map: sourcemap ? s.generateMap({ hires: true }) : null
+ 			};
+ 		}
+ 	};
+@@ -179,7 +179,7 @@ function ModulePreloadPolyfillPlugin() {
+ 			s.prepend("import \"vite/modulepreload-polyfill\";\n");
+ 			return {
+ 				code: s.toString(),
+-				map: sourcemap ? s.generateMap({ hires: true }) : void 0
++				map: sourcemap ? s.generateMap({ hires: true }) : null
+ 			};
+ 		}
+ 	};
+@@ -526,7 +526,7 @@ const PublicDirsPlugin = (options) => {
+ 			for (const [full, url] of code.matchAll(CSS_URL_RE)) if (url && resolveFromPublicAssets(url)) s.replace(full, `url(${options.baseURL}${url})`);
+ 			if (s.hasChanged()) return {
+ 				code: s.toString(),
+-				map: sourcemap ? s.generateMap({ hires: true }) : void 0
++				map: sourcemap ? s.generateMap({ hires: true }) : null
+ 			};
+ 		}
+ 	}, {
+@@ -561,7 +561,7 @@ const PublicDirsPlugin = (options) => {
+ 				s.prepend(`import { publicAssetsURL } from '#internal/nuxt/paths';`);
+ 				return {
+ 					code: s.toString(),
+-					map: sourcemap ? s.generateMap({ hires: true }) : void 0
++					map: sourcemap ? s.generateMap({ hires: true }) : null
+ 				};
+ 			}
+ 		},
+@@ -846,7 +846,7 @@ function StableEntryPlugin(nuxt) {
+ 			s.replaceAll(filename, "#entry");
+ 			if (s.hasChanged()) return {
+ 				code: s.toString(),
+-				map: sourcemap ? s.generateMap({ hires: true }) : void 0
++				map: sourcemap ? s.generateMap({ hires: true }) : null
+ 			};
+ 		},
+ 		writeBundle(_options, bundle) {
