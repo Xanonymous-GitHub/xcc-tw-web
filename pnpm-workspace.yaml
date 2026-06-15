@@ -1,7 +1,4 @@
-onlyBuiltDependencies:
-  - '@parcel/watcher'
-  - esbuild
-  - vue-demi
-patchedDependencies:
-  '@nuxt/vite-builder@4.4.4': patches/@nuxt__vite-builder@4.4.4.patch
-  '@tailwindcss/vite@4.2.4': patches/@tailwindcss__vite@4.2.4.patch
+allowBuilds:
+  '@parcel/watcher': true
+  esbuild: true
+  vue-demi: true
