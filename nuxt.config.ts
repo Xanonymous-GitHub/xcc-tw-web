@@ -38,9 +38,26 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
 
-  sourcemap: false,
+  sourcemap: {
+    client: false,
+    server: false,
+  },
 
   vite: {
+    build: {
+      modulePreload: {
+        polyfill: false,
+      },
+      sourcemap: false,
+      rollupOptions: {
+        onLog(level, log, handler) {
+          if (log.code === 'INVALID_ANNOTATION') {
+            return
+          }
+          handler(level, log)
+        },
+      },
+    },
     esbuild: {
       logOverride: {
         'css-syntax-error': 'silent',
